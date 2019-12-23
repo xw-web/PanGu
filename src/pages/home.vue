@@ -1,6 +1,6 @@
 <template>
   <div>
-    我是首页
+    首页修改
   </div>
 </template>
 
