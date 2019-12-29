@@ -1,5 +1,39 @@
 * {
     margin: 0;
     padding: 0;
+    color: #999;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+}
+ul,ul>li {
+  list-style: none;
+}
+.float_left {
+  float: left;
+}
+.float_right {
+  float: right;
+}
+/* 清除浮动 */
+.clear {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* felx 不换行 两端对齐，项目之间的间隔都相等*/
+.flex_row {
+  display: flex;
+  justify-content: space-between;
+}
+/* 水平垂直居中 */
+.paraent {
+  position: relative;
+}
+.son {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
