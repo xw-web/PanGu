@@ -1,8 +1,22 @@
 <template>
   <div>
     <header class="home_header">
-      <div class="header_main">
-        
+      <div class="header_main flex_row">
+        <div class="header_content_box header_content_first">logo</div>
+        <div class="header_content_box header_content_second">
+          <ul class="clear">
+            <li 
+              class="float_left headerNav_li" 
+              :class="{activeLi:activeId === item.id}" 
+              v-for="(item,index) in headerNav" :key="index"
+              @click='liActive(item.id)'>
+              <span>
+                {{item.name}}
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="header_content_box header_content_third">登录</div>
       </div>
     </header>
     <router-view></router-view>
@@ -13,11 +27,22 @@ export default {
   name:'Home',
   data(){
     return {
-
+      headerNav:[
+        {id:'1',name:'菜单'},
+        {id:'2',name:'菜单'},
+        {id:'3',name:'菜单'},
+        {id:'4',name:'菜单'},
+        {id:'5',name:'菜单'},
+        {id:'6',name:'菜单'},
+        {id:'7',name:'菜单'},
+      ],
+      activeId:'1'
     }
   },
   methods:{
-
+    liActive(id){
+      this.activeId = id;
+    }
   }
 }
 </script>
@@ -30,5 +55,29 @@ export default {
 }
 .header_main {
   width: 1100px;
+  margin: auto;
+}
+.header_content_box {
+  height: 70px;
+}
+.header_content_first {
+  width: 20%;
+}
+.header_content_second {
+  width: 60%;
+  line-height: 70px;
+}
+.headerNav_li {
+  padding: 0px 19px;
+  cursor: pointer;
+}
+.headerNav_li:hover {
+  background-color:#000; 
+}
+.activeLi {
+  background-color: #000;
+}
+.header_content_third {
+  width: 20%;
 }
 </style>
