@@ -13,13 +13,16 @@
               <span>
                 {{item.name}}
               </span>
+              <div class="triangle" v-show="activeId === item.id"></div>
             </li>
           </ul>
         </div>
-        <div class="header_content_box header_content_third">登录</div>
+        <div class="header_content_box header_content_third" >登录</div>
       </div>
     </header>
-    <router-view></router-view>
+    <main class="home_main">
+      <router-view></router-view>
+    </main>
   </div>
 </template>
 <script>
@@ -71,6 +74,7 @@ export default {
   line-height: 70px;
 }
 .headerNav_li {
+  position: relative;
   padding: 0px 19px;
   cursor: pointer;
 }
@@ -82,5 +86,18 @@ export default {
 }
 .header_content_third {
   width: 20%;
+}
+.home_main {
+  width: 1100px;
+  margin: auto;
+}
+.triangle {
+  position: absolute;
+  bottom:0;
+  width: 0;
+  height: 0;
+  border-width: 8px ;
+  border-style: solid;
+  border-color: transparent transparent red transparent;
 }
 </style>
