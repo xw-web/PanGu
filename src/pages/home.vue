@@ -9,7 +9,7 @@
               class="float_left headerNav_li" 
               :class="{activeLi:activeId === item.id}" 
               v-for="(item,index) in headerNav" :key="index"
-              @click='liActive(item.id)'>
+              @click='liActive(item)'>
               <span>
                 {{item.name}}
               </span>
@@ -28,8 +28,8 @@ export default {
   data(){
     return {
       headerNav:[
-        {id:'1',name:'菜单'},
-        {id:'2',name:'菜单'},
+        {id:'1',name:'样式',path:'/style'},
+        {id:'2',name:'Echarts',path:'/echarts'},
         {id:'3',name:'菜单'},
         {id:'4',name:'菜单'},
         {id:'5',name:'菜单'},
@@ -40,8 +40,11 @@ export default {
     }
   },
   methods:{
-    liActive(id){
-      this.activeId = id;
+    liActive(item){
+      this.activeId = item.id;
+      if(item.path){
+        this.$router.push({path:item.path,query:{}})
+      }
     }
   }
 }
