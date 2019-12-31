@@ -93,10 +93,12 @@ export default {
 }
 .triangle {
   position: absolute;
+  left: 50%;
+  transform: translate(-50%);
   bottom:0;
   width: 0;
   height: 0;
-  border-width: 8px ;
+  border-width: 7px ;
   border-style: solid;
   border-color: transparent transparent red transparent;
 }
