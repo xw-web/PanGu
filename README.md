@@ -3,10 +3,13 @@
 > A Vue.js project
 
 ## Build Setup
-<!-- vue重复点击路由报错问题 执行以下代码-->
-npm install vue-router@3.0 --save
+
 
 ``` bash
+
+# vue重复点击路由报错问题 执行以下代码
+npm install vue-router@3.0 --save
+
 # install dependencies
 npm install
 
