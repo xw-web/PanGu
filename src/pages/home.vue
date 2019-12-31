@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="xw_body">
     <header class="home_header">
       <div class="header_main flex_row">
         <div class="header_content_box header_content_first">logo</div>
@@ -90,6 +90,7 @@ export default {
 .home_main {
   width: 1100px;
   margin: auto;
+  
 }
 .triangle {
   position: absolute;
