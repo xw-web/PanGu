@@ -19,6 +19,7 @@ ul,ul>li {
   content: '';
   display: block;
   clear: both;
+  overflow: hidden;
 }
 /* felx 不换行 两端对齐，项目之间的间隔都相等*/
 .flex_row {
