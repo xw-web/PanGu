@@ -79,9 +79,9 @@ export default {
     scroll() {
       this.animate = true;
       setTimeout(() => {
-        this.dataList.push(this.dataList[0]);  // 将数组的第一个元素添加到数组的
-        this.dataList.shift();
-        this.animate = false;
+        this.dataList.push(this.dataList[0]);  // 将数组的第一个元素添加到数组的末尾
+        this.dataList.shift(); //删除数组的第一个元素
+        this.animate = false;  //取消过渡动画 使margin-top为0 变为最初的样子，从而视觉效果实现无缝滚动
       }, 500);
     }
   },
