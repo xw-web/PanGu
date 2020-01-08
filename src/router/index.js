@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from '@/pages/home'
 import Style from '@/router/style.js'
 import Echarts from '@/router/echarts.js'
+import Assembly from '@/router/assembly.js'
 Vue.use(Router)
 
 export default new Router({
@@ -13,7 +14,8 @@ export default new Router({
       component: Home,
       children: [ 
         ...Style,
-        ...Echarts
+        ...Echarts,
+        ...Assembly
       ]
     }
   ]

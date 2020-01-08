@@ -33,7 +33,7 @@ export default {
       headerNav:[
         {id:'1',name:'样式',path:'/style'},
         {id:'2',name:'Echarts',path:'/echarts'},
-        {id:'3',name:'菜单'},
+        {id:'3',name:'组件',path:'/assembly'},
         {id:'4',name:'菜单'},
         {id:'5',name:'菜单'},
         {id:'6',name:'菜单'},
