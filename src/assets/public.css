@@ -26,6 +26,12 @@ ul,ul>li {
   display: flex;
   justify-content: space-between;
 }
+/* flex换行 */
+.flex_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
 /* 水平垂直居中 */
 .paraent {
   position: relative;
