@@ -73,6 +73,7 @@ export default {
       console.log('year',year,typeof year,'month',month,typeof month);
       // 设置本月的一号
       let firstDay = year + '-'+ month + '-1';
+      // 设置最后一天
       let lastDay = year + '-' + month + '-' + (this.daysList[month-1] + '');
       this.setUpfirstDay(firstDay)
       this.getLastMonthDays(lastDay)
@@ -105,7 +106,6 @@ export default {
 .calendar_box {
   margin-top: 10px;
   width: 500px;
-  height: 500px;
   margin: auto;
   border: 1px solid #000;
   box-shadow: 0 0 5px 5px #000;

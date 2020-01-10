@@ -4,6 +4,7 @@ import Home from '@/pages/home'
 import Style from '@/router/style.js'
 import Echarts from '@/router/echarts.js'
 import Assembly from '@/router/assembly.js'
+import htmlFive from '@/router/htmlFive.js'
 Vue.use(Router)
 
 export default new Router({
@@ -15,7 +16,8 @@ export default new Router({
       children: [ 
         ...Style,
         ...Echarts,
-        ...Assembly
+        ...Assembly,
+        ...htmlFive
       ]
     }
   ]
