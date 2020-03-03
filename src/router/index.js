@@ -5,6 +5,7 @@ import Style from '@/router/style.js'
 import Echarts from '@/router/echarts.js'
 import Assembly from '@/router/assembly.js'
 import htmlFive from '@/router/htmlFive.js'
+import eui from '@/router/eui.js'
 Vue.use(Router)
 
 export default new Router({
@@ -17,7 +18,8 @@ export default new Router({
         ...Style,
         ...Echarts,
         ...Assembly,
-        ...htmlFive
+        ...htmlFive,
+        ...eui
       ]
     }
   ]

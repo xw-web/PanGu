@@ -35,7 +35,7 @@ export default {
         {id:'2',name:'Echarts',path:'/echarts'},
         {id:'3',name:'组件',path:'/assembly'},
         {id:'4',name:'html5',path:'/html5'},
-        {id:'5',name:'菜单'},
+        {id:'5',name:'ElementUI',path:'/eui'},
         {id:'6',name:'菜单'},
         {id:'7',name:'菜单'},
       ],
@@ -46,6 +46,7 @@ export default {
     liActive(item){
       this.activeId = item.id;
       if(item.path){
+        console.log('菜单',item)
         this.$router.push({path:item.path,query:{}})
       }
     }
