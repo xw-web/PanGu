@@ -50,6 +50,13 @@
         </li>
       </ul>
     </div>
+    <!-- 颜色渐变 -->
+    <div class="grad_div">
+      <div class="border_frame_wh frame_left_top"></div>
+      <div class="border_frame_wh frame_right_top"></div>
+      <div class="border_frame_wh frame_left_bottom"></div>
+      <div class="border_frame_wh frame_right_bottom"></div>
+    </div>
   </div>
 </template>
 
@@ -182,5 +189,44 @@ p:first-of-type {
 .seamless_rolling_li {
   height: 30px;
   line-height: 30px;
+}
+/* 颜色渐变 */
+.grad_div {
+  position: relative;
+  width: 500px;
+  height: 40px;
+  background-image:linear-gradient(to right,rgb(1, 64, 118) 40%,rgba(3,12,45,.9));
+  /* rgb(74, 138, 202) */
+}
+.border_frame_wh {
+  position: absolute;
+  border-color: rgb(71, 178, 254);
+  border-style: solid;
+  width: 10px;
+  height: 10px;
+}
+/* 左上 */
+.frame_left_top {
+  top: 0;
+  left: 0;
+  border-width: 2px 0px 0px 2px;
+}
+/* 右上 */
+.frame_right_top {
+  top: 0;
+  right: 0;
+  border-width: 2px 2px 0px 0px;
+}
+/* 左下 */
+.frame_left_bottom {
+  bottom: 0;
+  left: 0;
+  border-width: 0px 0px 2px 2px;
+}
+/* 右下 */
+.frame_right_bottom {
+  bottom: 0;
+  right: 0;
+  border-width: 0px 2px 2px 0px;
 }
 </style>
