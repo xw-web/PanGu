@@ -36,7 +36,7 @@ export default {
         {id:'3',name:'组件',path:'/assembly'},
         {id:'4',name:'html5',path:'/html5'},
         {id:'5',name:'ElementUI',path:'/eui'},
-        {id:'6',name:'菜单'},
+        {id:'6',name:'antDesignVue',path:'/ant'},
         {id:'7',name:'菜单'},
       ],
       activeId:'1'
